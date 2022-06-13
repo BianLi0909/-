@@ -1,0 +1,29 @@
+#include <AT89X51.H>
+void Delay50ms()
+{
+ char i, j;
+	i = 98;
+	j = 67;
+ do
+	{
+		while (--j);
+	}
+	while (--i);
+}
+void main()
+{
+ if(P3_3==0)
+	{
+	P1=0xff,Delay50ms();
+	P1=0xfe,Delay50ms();
+	P1=0xfe,Delay50ms();
+	P1=0xfc,Delay50ms();
+	P1=0xf8,Delay50ms();
+	P1=0xf0,Delay50ms();
+	P1=0xe0,Delay50ms();
+	P1=0xc0,Delay50ms();
+	P1=0x80,Delay50ms();
+	P1=0x00,Delay50ms();
+	}
+else P1=0xff;
+}
