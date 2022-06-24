@@ -16,7 +16,6 @@ void main()
 	{
 	P1=0xff,Delay50ms();
 	P1=0xfe,Delay50ms();
-	P1=0xfe,Delay50ms();
 	P1=0xfc,Delay50ms();
 	P1=0xf8,Delay50ms();
 	P1=0xf0,Delay50ms();
